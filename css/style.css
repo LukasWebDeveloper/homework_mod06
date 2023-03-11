@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+} 
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-width: 60%;
+    margin: auto auto;
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+hr {
+    height:0; 
+    border:0; 
+    border-top:3px solid rgb(238, 238, 238);
+  }
+
+.form__p {
+    background-color: white;
+    font-size: 22px;
+    padding: 0 20px;
+    
+}
+
+.form {
+    width: 100%;
+    background-color: white;
+    margin: 10px auto;
+}
+
+.form__div {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.newTask {
+    border-style: solid;
+    margin-right: 20px;
+    border-color: rgb(238, 238, 238);
+    flex-grow: 1;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    margin-left: 20px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    margin-left: 20px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+  }
+
+  ::placeholder {
+      margin-left: 20px;
+      letter-spacing: 1px;
+      padding-left: 5px;
+  }
+
+.button--addTask {
+    color: rgb(238, 238, 238);
+    background-color: teal;
+    border: none;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.tasks {
+    background-color: white;
+    font-size: 22px;
+    padding: 0;
+    width: 100%;
+    min-height: 150px;
+    
+}
+
+.ul__p--header {
+    padding: 0 20px;
+}
