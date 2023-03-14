@@ -1,0 +1,25 @@
+.js-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.js-list__item--done {
+    text-decoration: line-through;
+}
+
+.js-list__item {
+    list-style: none;
+    
+}
+
+.js-greenToggle {
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+.js-redDelete {
+    vertical-align: middle;;
+    justify-self: flex-end;
+}

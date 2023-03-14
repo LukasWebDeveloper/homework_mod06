@@ -76,7 +76,7 @@ hr {
     padding: 10px;
 }
 
-.tasks {
+.div--tasks {
     background-color: white;
     font-size: 22px;
     padding: 0;
@@ -88,6 +88,8 @@ hr {
 .ul__p--header {
     padding: 0 20px;
 }
+
+
 
 @media (max-width: 500px) {
     .body {
