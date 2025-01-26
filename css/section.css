@@ -1,0 +1,42 @@
+.section__titleNewTask {
+   border-bottom: 2px solid #eee;
+   padding: 2%;
+}
+
+.section__titleTasksList {
+   border-bottom: 2px solid #eee;
+   padding: 2%;
+}
+
+.sectionAddTask {
+   margin: 0 4%;
+}
+
+.sectionTasks {
+   position: relative;
+   top: -15px;
+   margin: 0 4%;
+}
+
+.tasks {
+   display: flex;
+   flex-direction: column;
+   align-content: space-evenly ;
+   margin: 0 2%;
+   padding-left: 0px;
+   padding-bottom: 2%;
+   list-style: none;
+}
+
+.list__item {
+   display: flex;
+   flex-direction: row;
+   margin: 1%;
+   padding: 1% 2%;
+   border-bottom: 2px solid #eee;
+}
+
+.list__content {
+   flex-grow: 1;
+   padding-left: 2%;
+}
