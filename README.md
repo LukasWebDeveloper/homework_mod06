@@ -10,7 +10,7 @@ Enjoy my project
 
 [Link do aplikacji](https://lukaswebdeveloper.github.io/homework_mod06/)
 
-## Screen
+## Screen gif site
 
 ![GifSite](img/siteTasksList.gif)
 
