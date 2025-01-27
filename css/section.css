@@ -1,22 +1,22 @@
-.section__titleNewTask {
-   border-bottom: 2px solid #eee;
-   padding: 2%;
-}
-
-.section__titleTasksList {
-   border-bottom: 2px solid #eee;
-   padding: 2%;
-}
-
 .sectionAddTask {
    margin: 0 4%;
 }
+
+.section__titleNewTask {
+   border-bottom: 2px solid #eee;
+   padding: 2%;
+}   
 
 .sectionTasks {
    position: relative;
    top: -15px;
    margin: 0 4%;
 }
+
+.section__titleTasksList {
+   border-bottom: 2px solid #eee;
+   padding: 2%;
+}   
 
 .tasks {
    display: flex;

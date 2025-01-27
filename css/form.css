@@ -1,3 +1,16 @@
+.newTask {
+   flex-grow: 1;
+   padding: 1%;
+   border: 2px solid #eee;
+}
+
+
+@media (max-width: 450px) {
+   .newTask {
+      margin-bottom: 2%;
+   }
+}
+
 .button {
    margin-left: 2%;
    padding: 1%;
@@ -10,18 +23,6 @@
 @media (max-width: 450px) {
    .button {
       margin-left: 0%;
-   }
-}
-
-.newTask {
-   flex-grow: 1;
-   padding: 1%;
-   border: 2px solid #eee;
-}
-
-@media (max-width: 450px) {
-   .newTask {
-      margin-bottom: 2%;
    }
 }
 
