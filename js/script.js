@@ -1,5 +1,5 @@
 {
-   const tasks = [
+   let tasks = [
       {
          content: "Umyć samochód",
          done: false,
@@ -10,21 +10,39 @@
       },
    ];
 
-   const addNewTask = (newTaskContent) => {
-      tasks.push({
-         content: newTaskContent,
-      });
+
+   const addNewTask = (newTaskContent) => {     //zrobione do zad 1  homework mod07
+
+      tasks = [
+         ...tasks,
+         {
+            content: newTaskContent,
+            done: false,
+         },
+      ];
 
       render();
    };
 
-   const removeTask = (taskIndex) => {
-      tasks.splice(taskIndex, 1);
+   const removeTask = (taskIndex,) => {      //zrobione do zad 1  homework mod07
+      tasks = [
+         ...tasks.slice(0, taskIndex),
+         ...tasks.slice(taskIndex + 1),
+      ];
       render();
    };
 
-   const toggleTaskDone = (taskIndex) => {
-      tasks[taskIndex].done = !tasks[taskIndex].done;
+   const toggleTaskDone = (taskIndex) => {      //zrobione do zad 1  homework mod07
+
+      tasks = [
+         ...tasks.slice(0, taskIndex),
+         {
+            ...tasks[taskIndex],
+            done: !tasks[taskIndex].done,
+         },
+         ...tasks.slice(taskIndex + 1),
+      ];
+
       render();
    };
 
@@ -39,11 +57,13 @@
 
       const toggleDoneButtons = document.querySelectorAll(".js-done")
 
-      toggleDoneButtons.forEach((toggleDoneButton, index) => {
+      toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
          toggleDoneButton.addEventListener("click", () => {
-            toggleTaskDone(index);
+            toggleTaskDone(taskIndex);
          });
       });
+
+      
    };
 
    const render = () => {
@@ -61,6 +81,7 @@
       }
 
       document.querySelector(".js-tasks").innerHTML = htmlString;
+
 
       bindEvents();
    };
